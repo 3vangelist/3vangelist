@@ -1,7 +1,7 @@
 
 body
 {
-	background:#efefef;
+	background:#000;
 }
 .container-fluid
 {
@@ -9,7 +9,11 @@ body
 }
 .footerSection
 {
+	position:fixed;
 	background:#737373;
 	padding:15px;
-	
+	bottom:0;
+	left:0;
+	right:0;
+	height:auto;
 }
