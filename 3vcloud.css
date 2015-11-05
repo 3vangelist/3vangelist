@@ -2,6 +2,8 @@
 body
 {
 	background:#000;
+	font-family:'Cabin';
+	color:#fff;
 }
 .container-fluid
 {
@@ -16,4 +18,75 @@ body
 	left:0;
 	right:0;
 	height:auto;
+	display:none;
+}
+body .container .darkBlue
+{
+	color:rgb(51, 102, 153);
+}
+body .jumbotron
+{
+	border-radius:0;
+	background:transparent;
+}
+.pageTitleContainer .pageSubTitle
+{
+	opacity:0;
+	animation-delay: 0.25s;
+}
+.pageTitleContainer .pageTitle
+{
+	opacity:0;
+}
+.fadeIn
+{
+	animation-name: fadeIn;
+    animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.parallax_layer1
+{
+	height:768px;
+	background:transparent url(background_1.jpg);
+}
+.parallax_footer_overlay
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	padding:48px;
+	background:rgba(0,0,0,0.4);
+}
+.skills_container
+{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+.skills_container .skill_container
+{
+	position:absolute;
+	height:170px;
+	width:160px;
+	margin:24px;
+	overflow:hidden;
+	background-size:90% auto;
+	background-repeat:no-repeat;
+	background-position:50% 35%;
+	text-align:center;
+	padding-top:150px;
+}
+
+@keyframes fadeIn {
+    from {
+		opacity:0;
+		margin-left:-32px;
+	}
+    to {
+		opacity:1;
+		margin-left:0;
+	}
 }
